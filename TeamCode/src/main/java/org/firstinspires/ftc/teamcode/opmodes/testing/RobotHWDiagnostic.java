@@ -15,7 +15,7 @@ public class RobotHWDiagnostic extends LinearOpMode {
         List<DcMotor> motors = hardwareMap.getAll(DcMotor.class);
         List<DcMotor> sortedMotors = Collections.emptyList();
         telemetry.addLine("CONNECTED MOTORS:");
-        // this code will probably break
+        // this code will probably break because we do not properly detect which hub a motor is on
         for (int i = 0; i < motors.size(); i++) {
             DcMotor x = motors.get(i);
             telemetry.addLine("\t" + x.getPortNumber() + ": " + x.getDeviceName());
