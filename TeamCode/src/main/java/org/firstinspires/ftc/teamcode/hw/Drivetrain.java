@@ -4,6 +4,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.IMU;
 
+import org.firstinspires.ftc.robotcore.external.Telemetry;
 import org.firstinspires.ftc.teamcode.pedroPathing.Constants;
 
 // Mecanum drivetrain only.
@@ -15,7 +16,7 @@ public class Drivetrain {
     private final IMU imu;
 
     // Creates an uncorrected (manual) Drivetrain that uses an IMU
-    public Drivetrain(HardwareMap hardwareMap) {
+    public Drivetrain(HardwareMap hardwareMap, Telemetry telemetry) {
         backLeft = hardwareMap.get(DcMotor.class,"backLeft");
         backRight = hardwareMap.get(DcMotor.class,"backRight");
         frontLeft = hardwareMap.get(DcMotor.class,"frontLeft");
