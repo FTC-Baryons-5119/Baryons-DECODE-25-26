@@ -12,7 +12,7 @@ public class MotorTest extends LinearOpMode {
         DcMotor motor2 = hardwareMap.get(DcMotor.class, "motor2");
         DcMotor motor3 = hardwareMap.get(DcMotor.class, "motor3");
         DcMotor motor4 = hardwareMap.get(DcMotor.class, "motor4");
-        while (true) {
+        while (opModeIsActive()) {
             if (gamepad1.a) {
                 motor1.setPower(gamepad1.left_stick_y);
             } else if (gamepad1.b) {
