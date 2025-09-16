@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
 // Auto class for testing individual motors and getting the active hardware mappings.
-@TeleOp (name="FreeRoam", group="Test Opmodes")
+@TeleOp (name="Motor Test", group="Test Opmodes")
 public class MotorTest extends LinearOpMode {
     public void runOpMode() {
         DcMotor motor1 = hardwareMap.get(DcMotor.class, "motor1");
