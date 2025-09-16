@@ -10,7 +10,7 @@ import org.firstinspires.ftc.teamcode.hw.Drivetrain;
 @TeleOp (name="FreeRoam", group="Test Opmodes")
 public class FreeRoam extends LinearOpMode {
     public void runOpMode() throws InterruptedException {
-        Drivetrain drivetrain = new Drivetrain(hardwareMap);
+        Drivetrain drivetrain = new Drivetrain(hardwareMap, telemetry);
         waitForStart();
         while(opModeIsActive()) {
             drivetrain.drive(gamepad1.left_stick_x, -gamepad1.left_stick_y, gamepad1.right_stick_x, false);
