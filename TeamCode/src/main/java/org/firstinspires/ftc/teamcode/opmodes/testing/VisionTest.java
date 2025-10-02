@@ -13,7 +13,7 @@ import org.firstinspires.ftc.vision.apriltag.AprilTagGameDatabase;
 import org.firstinspires.ftc.vision.apriltag.AprilTagLibrary;
 import org.firstinspires.ftc.vision.apriltag.AprilTagProcessor;
 
-@TeleOp(name="Vision Test",group="TEST")
+@TeleOp(name="Vision Test",group="Test Opmodes")
 public class VisionTest extends LinearOpMode {
     @Override
     public void runOpMode() throws InterruptedException {
