@@ -60,6 +60,7 @@ public class Vision {
     }
 
     public void getTagTelemetry(Telemetry telemetry, List<AprilTagDetection> tags) {
+        // this needs to be tested, not sure if this will exit if there are no tags in the list
         for (int i = 0; i < tags.size(); i++) {
             AprilTagDetection tag = tags.get(i);
             double distance = Math.sqrt(
