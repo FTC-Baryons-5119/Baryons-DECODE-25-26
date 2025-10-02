@@ -1,10 +1,7 @@
 package org.firstinspires.ftc.teamcode.hw;
 import android.util.Size;
 
-import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.HardwareMap;
-
 import org.firstinspires.ftc.robotcore.external.Telemetry;
 import org.firstinspires.ftc.robotcore.external.hardware.camera.WebcamName;
 import org.firstinspires.ftc.vision.apriltag.AprilTagDetection;
@@ -14,12 +11,11 @@ import org.firstinspires.ftc.vision.apriltag.AprilTagLibrary;
 import org.firstinspires.ftc.vision.apriltag.AprilTagGameDatabase;
 
 import java.util.List;
-import java.util.Optional;
 
 public class Vision {
-    private AprilTagLibrary currentLibrary;
-    private AprilTagProcessor tagProcessor;
-    private VisionPortal visionPortal;
+    private final AprilTagLibrary currentLibrary;
+    private final AprilTagProcessor tagProcessor;
+    private final VisionPortal visionPortal;
 
     public Vision(HardwareMap hardwareMap) {
         currentLibrary = AprilTagGameDatabase.getCurrentGameTagLibrary();
